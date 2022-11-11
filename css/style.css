@@ -1,0 +1,99 @@
+/* RESETENDO O CSS*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    --title-color: rgb(25, 99, 77);
+    --base-color:  rgb(105, 146, 136);
+    --base-color-secundaria: #00ff7f;
+}
+/* APLICANDO O FLEXBOX NO CORPO HTML*/
+body{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* USANDO VARIAVEIS NO CSS*/
+  background: var(--base-color);
+  
+  /*  TRANFORMANDO "PIXEL - PX" EM "REM"*/
+  font-size: 62.55;
+}
+/* TITULO DA BATERIA*/
+h1{
+    color: var(--base-color);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+}
+
+/* CAIXA PRINCIPAL - KEYS*/
+
+/*APLICANDO UM GRITO NO MEU CSS*/
+.keys{
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+}
+   /*  APLICANDO EFEITO DIV CLASS KEY - LETRA DA BATERIA*/
+.key{
+    width: 8rem;
+    height: 8rem;
+    border: 0.2rem solid var(--base-color-secundaria);
+    color: var(rgb(121, 59, 59));
+    /*APLICANDO O FLEXBOX PARA ALINHAR AS LETRAS */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /*TAMANHO DA LETRAS */
+    font-size:1.5rem;
+    font-weight: bald;
+}
+
+/*EFEITO JAVASCRIPT == DOPOIS*/
+.key.active{
+    /*FAZER DEPOIS*/
+}
+/*CAIXA DE COMPOSIÇÃO - COMPOSER*/
+.composer{
+    width: 26rem;
+    margin-top: 2rem;
+}
+
+.composer #input{
+    width: 100%;
+    outline: nome;
+    font-size: 1.7rem;
+    padding: 1rem 1.5rem;
+
+}
+/* BOTÃO DE ENVIAR COMPOSIÇÃO*/
+.composer button{
+    width: 100%;
+    height: 4rem;
+    background: nome;
+    border: 0.2rem solid var(--base-color-secundaria);
+    color: var(--title-color);
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.composer button:haver{
+    background: rgba(0,0,0,21);
+}
+
+footer{
+    margin-top: 2rem;
+    color: var(--title-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
